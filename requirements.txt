@@ -1,0 +1,5 @@
+selenium~=4.8.3
+pytest~=7.2.2
+appium-python-client~=2.8.1
+pyyaml~=6.0
+pytest_bdd~=6.1.0

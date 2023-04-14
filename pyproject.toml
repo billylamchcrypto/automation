@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "pythonproject3"
+version = "0.1.0"
+description = ""
+authors = ["billylam <billy.lam@crypto.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+appium-python-client = "^2.8.1"
+pyaml = "^21.10.1"
+pytest = "^7.2.2"
+pytest-bdd = "^6.1.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
