@@ -9,12 +9,14 @@ class Passcode(Base):
         self.driver = driver
 
 # aos element
-    _p9 = ('id', '3u7')
-    _p8 = ('id', 'v3d')
-    _p7 = ('id', '9t6')
-    _p6 = ('id', '7u1')
-    _p5 = ('id', 'ke8')
-    _p4 = ('id', '331')
+    _p9 = ('id', 'co.mona.android.staging:id/keyboard9Btn')
+    _p8 = ('id', 'co.mona.android.staging:id/keyboard8Btn')
+    _p7 = ('id', 'co.mona.android.staging:id/keyboard7Btn')
+    _p6 = ('id', 'co.mona.android.staging:id/keyboard6Btn')
+    _p5 = ('id', 'co.mona.android.staging:id/keyboard5Btn')
+    _p4 = ('id', 'co.mona.android.staging:id/keyboard4Btn')
+
+    _passcode_title = ('id', 'co.mona.android.staging:id/mainCaptionTextView')
 
     def passcode_enter(self):
         self.click(self._p9)
@@ -25,7 +27,7 @@ class Passcode(Base):
         self.click(self._p4)
 
     def passcode_here(self):
-        self.wait_visible(self._p9)
+        self.wait_visible(self._passcode_title)
 
 
 

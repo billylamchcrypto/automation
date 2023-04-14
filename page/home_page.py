@@ -9,7 +9,7 @@ class Home(Base):
         self.driver = driver
 
 # aos element
-    _lion_logo = ('id', '')
+    _lion_logo = ('id', 'co.mona.android.staging:id/navigation_hex_button')
 
     def home_here(self):
         self.wait_visible(self._lion_logo)

@@ -17,7 +17,7 @@ device_config: &device_config
         deviceName: 'emulator-5554'
         automationName: 'uiautomator2'
         appPackage: 'co.mona.android.staging'
-        app: '/Users/billylam/Desktop/apk/1000454.apk'
+        app: '/Users/billylam/Desktop/apk/1000460.apk'
         noReset: True
         fullReset: False
 
