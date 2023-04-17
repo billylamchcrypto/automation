@@ -3,8 +3,8 @@ from settings import *
 from appium import webdriver
 
 
-@pytest.fixture
-def setup():
+@pytest.fixture(scope="class")
+def driver():
     capabilities = {
         'platformName': (CONFIG[platform]['platformName']),
         'platformVersion': (CONFIG[platform]['platformVersion']),
@@ -18,8 +18,6 @@ def setup():
     }
     url = 'http://127.0.0.1:4723/wd/hub'
     driver = webdriver.Remote(url, capabilities)
-    return driver
+    yield driver
+    driver.quit()
 
-    # def teardown():
-    #     cls.instance.driver.quit()
-    # cls.addfinalizer(teardown)

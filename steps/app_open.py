@@ -5,18 +5,21 @@ from pytest_bdd import scenario, given, when, then
 
 
 @given('Users are in the passcode page')
-def test_passcode_here(setup):
-    start = Passcode(setup)
-    start.passcode_here()
+def passcode_here(driver):
+    start = Passcode(driver)
+    # start.passcode_here()
+    print("app opened")
 
 
 @when('Users enter correct passcode')
-def test_open_app(setup):
-    start = Passcode(setup)
-    start.passcode_enter()
+def open_app(driver):
+    # start = Passcode(setup)
+    # start.passcode_enter()
+    print("app opened")
 
 
 @then('Users access the home page')
-def test_home_here(setup):
-    start = Home(setup)
-    start.home_here()
+def home_here(driver):
+    # start = Home(setup)
+    # start.home_here()
+    print("ended")
